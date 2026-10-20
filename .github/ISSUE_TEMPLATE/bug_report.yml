@@ -1,0 +1,44 @@
+name: Report a bug
+description: Something in SnipStack does not work as it should.
+labels: ["reported"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please never paste clip contents, passwords or other personal data here.
+        A security problem does not belong in a public issue: write to security@snipstack.app instead.
+  - type: input
+    id: version
+    attributes:
+      label: SnipStack version
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it again
+      placeholder: |
+        1. Open the popup with Win+V
+        2. …
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots or the app's log help. Check them for personal data before you attach them.
