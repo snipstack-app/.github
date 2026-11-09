@@ -1,0 +1,19 @@
+name: Suggest an idea
+description: Something SnipStack could do, or do better.
+labels: ["reported"]
+body:
+  - type: markdown
+    attributes:
+      value: Please never paste clip contents, passwords or other personal data here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you want to get done
+      description: The situation and what is in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How SnipStack could help. Rough is fine.
